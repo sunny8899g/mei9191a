@@ -1,36 +1,20 @@
-port: 7890
-socks-port: 7891
-redir-port: 7892
-mixed-port: 7893
-allow-lan: false
-mode: rule
-log-level: info
-ipv6: false
-external-controller: 0.0.0.0:9090
-clash-for-android:
-  append-system-dns: false
-profile:
-  tracing: true
-experimental:
-  sniff-tls-sni: true
-proxies:
-  - {name: 🇭🇰香港 - 80端口 - 1, server: 43.198.222.208, port: 10080, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰香港 - 443端口 - 2, server: 13.230.161.84, port: 10443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵东京 - 80端口 - 1, server: 54.250.169.220, port: 10080, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵东京 - 443端口 - 2, server: 18.143.91.204, port: 10443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇸🇬狮城 - 80端口 - 1, server: 13.212.193.212, port: 10080, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇸🇬狮城 - 443端口 - 2, server: 18.143.164.254, port: 10443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇰🇷首尔 - 80端口 - 1, server: 3.38.151.85, port: 18443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇰🇷首尔 - 443端口 - 1, server: 43.201.53.169, port: 18443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸美国西区 - 80端口 - 1, server: 43.201.19.255, port: 18443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸美国西区 - 443端口 - 1, server: 3.101.103.212, port: 10443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰香港 - TLS - 1, server: tls.0000000011a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000011a.node-for-bigairport.win}}}
-  - {name: 🇭🇰香港 - TLS - 2, server: tls.0000000012a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000012a.node-for-bigairport.win}}}
-  - {name: 🇯🇵东京 - TLS - 1, server: tls.0000000013a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000013a.node-for-bigairport.win}}}
-  - {name: 🇯🇵东京 - TLS - 2, server: tls.0000000014a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000014a.node-for-bigairport.win}}}
-  - {name: 🇸🇬狮城 - TLS - 1, server: tls.0000000015a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000015a.node-for-bigairport.win}}}
-  - {name: 🇸🇬狮城 - TLS - 2, server: tls.0000000016a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000016a.node-for-bigairport.win}}}
-  - {name: 🇰🇷首尔 - TLS - 1, server: tls.0000000017a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000017a.node-for-bigairport.win}}}
-  - {name: 🇰🇷首尔 - TLS - 2, server: tls.0000000018a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000018a.node-for-bigairport.win}}}
-  - {name: 🇺🇸美国西区 - TLS - 1, server: tls.0000000019a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000019a.node-for-bigairport.win}}}
-  - {name: 🇺🇸美国西区 - TLS - 2, server: tls.0000000020a.node-for-bigairport.win, port: 443, type: vmess, uuid: 73530cba-9d6e-4e27-890d-ed636e458418, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: tls.0000000020a.node-for-bigairport.win}}}
+vmess://eyJ2IjoiMiIsInBzIjoi6aaZ5rivIC0gODDnq6/lj6MgLSAxIiwiYWRkIjoiNDMuMTk4LjIyMi4yMDgiLCJwb3J0IjoiMTAwODAiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi6aaZ5rivIC0gNDQz56uv5Y+jIC0gMiIsImFkZCI6IjEzLjIzMC4xNjEuODQiLCJwb3J0IjoiMTA0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi5Lic5LqsIC0gODDnq6/lj6MgLSAxIiwiYWRkIjoiNTQuMjUwLjE2OS4yMjAiLCJwb3J0IjoiMTAwODAiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi5Lic5LqsIC0gNDQz56uv5Y+jIC0gMiIsImFkZCI6IjE4LjE0My45MS4yMDQiLCJwb3J0IjoiMTA0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi54uu5Z+OIC0gODDnq6/lj6MgLSAxIiwiYWRkIjoiMTMuMjEyLjE5My4yMTIiLCJwb3J0IjoiMTAwODAiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi54uu5Z+OIC0gNDQz56uv5Y+jIC0gMiIsImFkZCI6IjE4LjE0My4xNjQuMjU0IiwicG9ydCI6IjEwNDQzIiwidHlwZSI6Im5vbmUiLCJpZCI6IjczNTMwY2JhLTlkNmUtNGUyNy04OTBkLWVkNjM2ZTQ1ODQxOCIsImFpZCI6IjAiLCJuZXQiOiJ3cyIsInBhdGgiOiIvIiwiaG9zdCI6IiIsInRscyI6IiJ9
+vmess://eyJ2IjoiMiIsInBzIjoi6aaW5bCUIC0gODDnq6/lj6MgLSAxIiwiYWRkIjoiMy4zOC4xNTEuODUiLCJwb3J0IjoiMTg0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi6aaW5bCUIC0gNDQz56uv5Y+jIC0gMSIsImFkZCI6IjQzLjIwMS41My4xNjkiLCJwb3J0IjoiMTg0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi576O5Zu96KW/5Yy6IC0gODDnq6/lj6MgLSAxIiwiYWRkIjoiNDMuMjAxLjE5LjI1NSIsInBvcnQiOiIxODQ0MyIsInR5cGUiOiJub25lIiwiaWQiOiI3MzUzMGNiYS05ZDZlLTRlMjctODkwZC1lZDYzNmU0NTg0MTgiLCJhaWQiOiIwIiwibmV0Ijoid3MiLCJwYXRoIjoiLyIsImhvc3QiOiIiLCJ0bHMiOiIifQ==
+vmess://eyJ2IjoiMiIsInBzIjoi576O5Zu96KW/5Yy6IC0gNDQz56uv5Y+jIC0gMSIsImFkZCI6IjMuMTAxLjEwMy4yMTIiLCJwb3J0IjoiMTA0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoiIiwidGxzIjoiIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi6aaZ5rivIC0gVExTIC0gMSIsImFkZCI6InRscy4wMDAwMDAwMDExYS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMTFhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi6aaZ5rivIC0gVExTIC0gMiIsImFkZCI6InRscy4wMDAwMDAwMDEyYS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMTJhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi5Lic5LqsIC0gVExTIC0gMSIsImFkZCI6InRscy4wMDAwMDAwMDEzYS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMTNhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi5Lic5LqsIC0gVExTIC0gMiIsImFkZCI6InRscy4wMDAwMDAwMDE0YS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMTRhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi54uu5Z+OIC0gVExTIC0gMSIsImFkZCI6InRscy4wMDAwMDAwMDE1YS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMTVhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi54uu5Z+OIC0gVExTIC0gMiIsImFkZCI6InRscy4wMDAwMDAwMDE2YS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMTZhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi6aaW5bCUIC0gVExTIC0gMSIsImFkZCI6InRscy4wMDAwMDAwMDE3YS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMTdhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi6aaW5bCUIC0gVExTIC0gMiIsImFkZCI6InRscy4wMDAwMDAwMDE4YS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMThhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi576O5Zu96KW/5Yy6IC0gVExTIC0gMSIsImFkZCI6InRscy4wMDAwMDAwMDE5YS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMTlhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
+vmess://eyJ2IjoiMiIsInBzIjoi576O5Zu96KW/5Yy6IC0gVExTIC0gMiIsImFkZCI6InRscy4wMDAwMDAwMDIwYS5ub2RlLWZvci1iaWdhaXJwb3J0LndpbiIsInBvcnQiOiI0NDMiLCJ0eXBlIjoibm9uZSIsImlkIjoiNzM1MzBjYmEtOWQ2ZS00ZTI3LTg5MGQtZWQ2MzZlNDU4NDE4IiwiYWlkIjoiMCIsIm5ldCI6IndzIiwicGF0aCI6Ii8iLCJob3N0IjoidGxzLjAwMDAwMDAwMjBhLm5vZGUtZm9yLWJpZ2FpcnBvcnQud2luIiwidGxzIjoidGxzIn0=
